@@ -63,3 +63,106 @@ header{
 .navbar .links a:hover{
   color: yellow;
 }
+.navbar .login-btn{
+ border: none;
+ outline: none;
+ background: yellow;
+ color: white;
+ font-size: 1rem;
+ font-weight: 600;
+ padding: 10px 18px;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: 0.15s ease;
+ text-transform: uppercase;
+}
+.navbar .login-btn:hover{
+    background: rgb(233, 237, 5);
+    /* color: green; */
+}
+.form-popup{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: white;
+    max-width: 720px;
+    width: 100%;
+    z-index: 10;
+    border: 2px solid rgb(231, 214, 214);
+    transform: translate(-50%,-70%);
+    /* opacity: 0;
+    pointer-events: none; */
+}
+.form-popup .close {
+    position: absolute;
+    font-size: 23px;
+    font-weight: 600;
+    right: 12px;
+    cursor: pointer;
+  }
+.form-popup .form-container{
+    display: flex;
+}
+.form-container .form-details{
+ color: #f5eeee;
+ width: 100%;
+ max-width: 330px;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.form-container h2{
+    text-align: center;
+    margin-bottom: 29px;
+}
+
+ .form-container p{
+ text-align: justify;
+} 
+.login .form-details{
+    padding: 0 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(login.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.form-container .form-content{
+    width:100%;
+    padding: 36px;
+
+}
+
+.form-container .form-content #title{
+    color: dimgray;
+}
+.form-content .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    font-size: 0.95rem;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.input-field input:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.form-container a{
+    color: rgb(0, 174, 255);
+    text-decoration: none;
+}
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+
